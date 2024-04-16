@@ -141,7 +141,18 @@
 
 
 
+i {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.5s;
+  /* Apply transition effect specifically to the transform property */
 
+  /* Define the transition scale effect on hover */
+  &:hover {
+    color: #999999 !important;
+    transform: scale(1.3);
+  }
+}
   
   
   
