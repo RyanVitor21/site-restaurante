@@ -76,7 +76,7 @@
     padding: 20px;
     width: 100%;
     margin-top: auto; /* Coloca o footer no final da página */
-    position: fixed;
+    position: auto;
     bottom: 0;  
     left: 0;
     width: 100%;
@@ -149,11 +149,26 @@ i {
 
   /* Define the transition scale effect on hover */
   &:hover {
-    color: #999999 !important;
+    color: #000000 !important;
     transform: scale(1.3);
   }
 }
-  
-  
+.fa-instagram {
+  color: #b80791; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+}
+.fa-facebook {
+  color: #0315b6; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+}
+.fa-twitter {
+  color: #000000; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+}
+  .fa-whatsapp {
+  color: #06d117; /* Cor dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+}
+
   
   

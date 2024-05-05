@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* Propriedades que se aplicam a todos os elementos da página. */
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header, nav, main, aside, footer{
+
+    display: flex;
+    background: gray;
+    margin: 3px;
+
+
+}
+
+body {
+display: flex;
+margin: 3px;
+flex-wrap: wrap;
+flex: 1 1 100vw ;
+}
+
+
+header {
+flex: 1 1 100vw ;
+height: 100px;
+
+}
+
+nav {
+flex: 1 1 200px;
+
+}
+
+main {
+flex: 20 1 500px;
+
+height: calc(100vh - 224px);
+
+}
+
+aside {
+
+flex: 1 1 200px;
+
+}
+
+footer {
+
+flex: 1 1 100vw ;
+height: 100px;
+}
+
+@media only screen and ( max-width: 923px){
+    main{
+        height: calc(100vh - 330px);
+    }
+
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+
+
+
