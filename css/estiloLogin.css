@@ -13,14 +13,15 @@ body {
 
 /* Estilização adicional para o formulário */
 form {
-    max-width: 800px; /* Ajusta a largura máxima do formulário */
+    max-width: 570px; /* Ajusta a largura máxima do formulário */
     margin: auto; /* Centraliza horizontalmente */
     padding: 20px;
-    border: 5px solid #c964008d;
+    border: 1px solid #c964008d;
     border-radius: 50px;
     background-color: rgba(255, 133, 105, 0.757);
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: -60px; /* Ajusta o posicionamento vertical do formulário para cobrir o título */
 }
 
 form label {
@@ -37,10 +38,11 @@ form input[type="password"] {
     border-radius: 5px;
     width: calc(100% - 120px); /* Calcula a largura do input, considerando a largura do label */
     font-size: 18px; /* Ajusta o tamanho do texto dos nomes dos campos */
+    margin-top: 10px; /* Adiciona margem superior ao campo de e-mail */
 }
 
 form button[type="submit"] {
-    width: 85%;
+    width: 78%;
     padding: 10px;
     background-color: #640000;
     color: #fff;
@@ -73,7 +75,8 @@ form button[type="submit"] {
 
 h1 {
     text-align: center;
-    margin-top: 10px;
+    margin: 0; /* Remova a margem superior para eliminar o espaço extra acima do título */
+    padding: 0; /* Remova qualquer padding para garantir que o título não ocupe espaço extra */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     color: #333;
@@ -89,3 +92,21 @@ div span {
     margin-top: 10px; /* Adiciona um espaço de 10 pixels acima dos spans */
     border-radius: 4px;
 }
+
+#BotaoDeVoltar {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(68, 0, 0);
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+
+#BotaoDeVoltar:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+}
+
