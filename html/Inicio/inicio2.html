@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Delivery</title>
+    <link rel="stylesheet" href="/css/teste.css">
+    
+</head>
+<body>
+    <img id="BotaoDeVoltar" src="/img/voltar.png">
+    <nav class="menu">
+        <div class="menuflutuante">
+                <ul class="menulista menulista--flutuante">
+                    <li class="menuitem "><a href="/inicio">Início</a></li>
+                    <li class="menuitem "><a href="/restaurantes">Restaurantes</a></li>
+                    <li class="menuitem "><a href="/mercados">Mercados</a></li>
+                    <li class="menuitem "><a href="/bebidas">Bebidas</a></li>
+                    <li class="menuitem "><a href="/shopping">Shopping</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="cabecalho">
+        <h1 class="cabecalhotitulo">Turbo Eats</h1>
+        <h3 style="text-align: center; color: white;">Restaurante e Delivery</h3>
+    </header>
+
+    <section class="banner">
+        <div class="bannerconteudo">
+            <h2 class="bannertitulo">Comida de qualidade na sua porta!</h2>
+            <p class="bannerdescricao">Peça agora e aproveite nossas ofertas especiais.</p>
+            <a href="#" class="botao botao--primario">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <h2 class="destaquestitulo">Pratos em Destaque</h2>
+        <div class="prato">
+            <img src="/img/comidas.jpg" alt="Prato 1" class="pratoimagem">
+            <h3 class="pratonome">Hamburguer com acompanhamento</h3>
+            <p class="pratodescricao">Descrição do prato. Lorem ipsum dolor sit amet.</p>
+            <span class="pratopreco">R$ 19,99</span>
+            <a href="#" class="botao botao--secundario">Adicionar ao Carrinho</a>
+        </div>
+        <!-- Mais pratos em destaque aqui -->
+    </section>
+
+    <footer class="rodape">
+        <p class="rodapetexto">&copy; 2024 Meu Delivery. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adicione um evento de clique ao botão de voltar
+        document.getElementById("BotaoDeVoltar").addEventListener("click", function() {
+            // Use o método history.back() para voltar à página anterior
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

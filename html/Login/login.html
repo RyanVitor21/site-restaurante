@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/css/estiloLogin.css" />
 </head>
 <body>
+    <img id="BotaoDeVoltar" src="/img/voltar.png">
    <div class="container">
     <h1>Login</h1>
     <form action="/login" method="POST">
@@ -31,6 +32,13 @@
         </div>
     <!-- Referenciando o arquivo JavaScript -->
     <script src="/js/login.js"></script>
+    <script>
+        // Adicione um evento de clique ao botão de voltar
+        document.getElementById("BotaoDeVoltar").addEventListener("click", function() {
+            // Use o método history.back() para voltar à página anterior
+            window.history.back();
+        });
+    </script>
     </div>
 </body>
 </html>
