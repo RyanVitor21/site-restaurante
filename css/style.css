@@ -175,4 +175,32 @@ i:hover {
     transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
 }
 
+footer {
+    background-color: #ffd2d2;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #640000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff2121;
+}
+
+
 
