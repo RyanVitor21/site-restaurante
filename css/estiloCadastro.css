@@ -20,11 +20,7 @@ form {
     text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #6d1d00;
-}
+
 
 input[type="text"],
 input[type="email"],

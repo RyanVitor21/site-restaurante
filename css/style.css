@@ -1,188 +1,178 @@
 .btn-login {
-    background-color: #ff7300; /* Laranja queimado */
-    color: #fff; /* Cor do texto */
-    border-color: #ff7300; /* Cor da borda */
-    border: 1px solid #ee5700f5;
-    font-size: 18px; /* Tamanho da fonte */
-    padding: 12px 24px; /* Espaçamento interno (vertical, horizontal) */
-    border-radius: 8px; /* Raio dos cantos */
-  }
-  
-  .btn-cadastro {
-    background-color: #FFA500; /* Laranja */
-    color: #fff; /* Cor do texto */
-    border: 1px solid #ff5100; /* Cor da borda */
-    font-size: 18px; /* Tamanho da fonte */
-    padding: 12px 24px; /* Espaçamento interno (vertical, horizontal) */
-    border-radius: 8px; /* Raio dos cantos */
-  }
-  
-  .btn-cadastro:hover {
-    background-color: #FF8C00; /* Laranja mais escuro ao passar o mouse */
-    border: 1px solid #FF8C00; /* Cor da borda ao passar o mouse */
-    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
-  }
+  background-color: #ff7300; /* Laranja queimado */
+  color: #fff; /* Cor do texto */
+  border-color: #ee5700; /* Cor da borda */
+  border: 1px solid #ee5700; /* Define a borda */
+  font-size: 18px; /* Tamanho da fonte */
+  padding: 12px 24px; /* Espaçamento interno (vertical, horizontal) */
+  border-radius: 8px; /* Raio dos cantos */
+}
 
-  .btn-login:hover {
-    background-color: #FF8C00; /* Laranja mais escuro ao passar o mouse */
-    border: 1px solid #FF8C00; /* Cor da borda ao passar o mouse */
-    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
-  }
-  
-  
-  .btn-group {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .btn-group button {
-    margin-left: 10px; /* Adiciona um espaço entre os botões */
-  }
+.btn-cadastro {
+  background-color: #FFA500; /* Laranja */
+  color: #fff; /* Cor do texto */
+  border: 1px solid #ff5100; /* Cor da borda */
+  font-size: 18px; /* Tamanho da fonte */
+  padding: 12px 24px; /* Espaçamento interno (vertical, horizontal) */
+  border-radius: 8px; /* Raio dos cantos */
+}
 
-  #logo {
-    width: 150px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 100%; /* Transforma o elemento em um círculo (ou oval se a largura e a altura não forem iguais) */
-  }
-  
+.btn-cadastro:hover,
+.btn-login:hover {
+  background-color: #FF8C00; /* Laranja mais escuro ao passar o mouse */
+  border: 1px solid #FF8C00; /* Cor da borda ao passar o mouse */
+  transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
 
-  body {
-    background-image: url('/img/primeiraimagem.jpg'); /* Caminho para sua imagem */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento pai */ 
-    width: 100%; 
-  }
+.btn-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
-  html {
-    height: 100%;
-  }
-  
-  .wrapper {
-    min-height: 300vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    flex: 1;
-    margin: 0% auto;
-    height: 100%;
-  }
-  
-  footer {
-    background-color: rgb(255, 192, 172);
-    padding: 20px;
-    width: 100%;
-    margin-top: auto; /* Coloca o footer no final da página */
-    position: auto;
-    bottom: 0;  
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  
-  }
+.btn-group button {
+  margin-left: 10px; /* Adiciona um espaço entre os botões */
+}
+
+#logo {
+  width: 150px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 100%; /* Transforma o elemento em um círculo (ou oval se a largura e a altura não forem iguais) */
+}
+
+body {
+  background-image: url('/img/primeiraimagem.jpg'); /* Caminho para sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento pai */ 
+}
+
+html {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 300vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin: 0 auto;
+}
+
 /* Estilos para centralizar as imagens e adicionar descrições */
 .menu-principal {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around; /* Distribui as imagens igualmente na horizontal */
   align-items: center;
   text-align: center;
-  margin-top: 250px;
-  width: 100%;
-  height: 60px;
+  margin-top: 100px; /* Ajusta o espaçamento superior */
 }
 
-
-#delivery {
-  width: 500px; /* Largura das imagens */
-  height: auto; /* Mantém a proporção */
-  margin-bottom: 2px; /* Espaçamento entre as imagens */
-  mix-blend-mode: multiply;
+.imagem-comida,
+.imagem-delivery {
+  text-align: center;
 }
-
-#comida{
-  width: 400px; /* Largura das imagens */
-  height: auto; /* Mantém a proporção */
-  margin-bottom: 20px; /* Espaçamento entre as imagens */
-  mix-blend-mode:normal;
-}
-
 
 .descricao {
-  font-family: Arial, sans-serif; /* Escolha uma fonte adequada */
-  font-size: 34px; /* Tamanho da fonte */
-  color: #fff; /* Cor do texto */
-  margin-top: -8%; /* Espaçamento superior */
-  background-color: rgb(235, 76, 2); /* Cor de fundo preto */
-  padding: 10px; /* Adicione um preenchimento interno ao redor do texto */
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: #FFA500; /* Cor de fundo laranja */
+  color: #fff; /* Cor do texto branco */
+  padding: 8px 40px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.imagem-delivery {
+  position: relative;
+}
+
+.imagem-delivery .descricao {
+  position: absolute;
+  bottom: 46px; /* Ajusta a distância da descrição em relação à parte inferior da imagem */
+  left: 50%; /* Posiciona a descrição no centro horizontal */
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+
+
+
+
+
+/* Melhorias aplicadas */
+
+#delivery,
+#comida {
+    width: 80%; /* Redimensiona as imagens para ocuparem 80% da largura disponível */
+    max-width: 600px; /* Define um tamanho máximo para as imagens */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+    mix-blend-mode: multiply;
 }
 
 .descricao:nth-child(2) {
-  margin-top: 50px; /* Ajuste o espaçamento superior para o segundo texto conforme necessário */
+    margin-top: 50px; /* Ajuste o espaçamento superior para o segundo texto conforme necessário */
 }
 
-#label-nome, #label-email, #label-senha {
-  color: rgb(0, 0, 0);
-  background-color: rgb(235, 76, 2); /* Cor de fundo preto */
-  padding: 5px; /* Adicione um preenchimento interno ao redor do texto */ /* ou qualquer outra cor desejada */
-}
 
-.header-1{
-  background-color: rgba(216, 98, 1, 0.39);
-  height: 90px
+.header-1 {
+    background-color: rgba(216, 98, 1, 0.39);
+    height: 90px;
 }
 
 .delivery-img {
-  margin-top: 100px; /* Ajuste o valor conforme necessário para mover a imagem de entrega para baixo */
+    margin-top: 100px; /* Ajuste o valor conforme necessário para mover a imagem de entrega para baixo */
 }
-
-
 
 i {
-  display: inline-block;
-  margin: 10px;
-  transition: transform 0.5s;
-  /* Apply transition effect specifically to the transform property */
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.5s;
+    /* Apply transition effect specifically to the transform property */
+}
 
-  /* Define the transition scale effect on hover */
-  &:hover {
-    color: #000000 !important;
+/* Define o efeito de transição para o hover */
+i:hover {
+    color: #000000;
+    /* Altera a cor para preto ao passar o mouse */
     transform: scale(1.3);
-  }
+    /* Aumenta o tamanho em 30% ao passar o mouse */
 }
+
 .fa-instagram {
-  color: #b80791; /* Cor dos ícones */
-  font-size: 24px; /* Tamanho dos ícones */
+    color: #b80791; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
 }
+
 .fa-facebook {
-  color: #0315b6; /* Cor dos ícones */
-  font-size: 24px; /* Tamanho dos ícones */
+    color: #0315b6; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
 }
+
 .fa-twitter {
-  color: #000000; /* Cor dos ícones */
-  font-size: 24px; /* Tamanho dos ícones */
+    color: #000000; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
 }
-  .fa-whatsapp {
-  color: #06d117; /* Cor dos ícones */
-  font-size: 24px; /* Tamanho dos ícones */
+
+.fa-whatsapp {
+    color: #06d117; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
 }
 
 #BotaoDeVoltar {
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  background-color: rgb(68, 0, 0);
-  border-radius: 50%;
-  top: 40px;
-  left: 20px;
-  z-index: 9999;
-  transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(68, 0, 0);
+    border-radius: 50%;
+    top: 40px;
+    left: 20px;
+    z-index: 9999;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
 }
 
 #BotaoDeVoltar:hover {
-  transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
 }
 
-  
-  
+
