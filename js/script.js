@@ -16,5 +16,4 @@
   $(window).on('load', function() {
     $("#loader-wrapper").fadeOut(700);
   });
-});
-
+})(jQuery); // Certifique-se de que o jQuery seja passado como argumento para a função anônima
