@@ -85,3 +85,20 @@ body {
   }
 
   
+  .cookie-notice {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accept-button {
+    background-color: #ff1e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

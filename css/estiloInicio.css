@@ -1,70 +1,134 @@
-@charset "UTF-8";
+/* Estilos para o menu */
+/* Estilos para o menu */
+.menu {
+    background-color: #ff9355;
+    padding: 10px 0;
+}
 
-/* Propriedades que se aplicam a todos os elementos da página. */
-* {
-	margin: 0;
+.menu ul {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos para o restante do layout */
+.cabecalho {
+    background-color: #ff5f2e;
+    padding: 40px;
     
 }
 
-header, nav, main, aside, footer{
-
-    display: flex;
-    background: gray;
-    margin: 3px;
-
-
+.cabecalhotitulo {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
 }
 
-body {
-display: flex;
-margin: 3px;
-flex-wrap: wrap;
-flex: 1 1 100vw ;
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-
-header {
-flex: 1 1 100vw ;
-height: 100px;
-
+.bannerconteudo {
+    color: #fff;
 }
 
-nav {
-flex: 1 1 200px;
-
+.bannertitulo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-main {
-flex: 20 1 500px;
-
-height: calc(100vh - 224px);
-
+.bannerdescricao {
+    font-size: 1.2em;
 }
 
-aside {
-
-flex: 1 1 200px;
-
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5f2e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-footer {
-
-flex: 1 1 100vw ;
-height: 100px;
+.botao:hover {
+    background-color: #ff7f4d;
 }
 
-@media only screen and ( max-width: 923px){
-    main{
-        height: calc(100vh - 330px);
-    }
-
-    aside{
-        flex: 1 1 100vw;
-        height: 100px;
-    }
+.destaques {
+    padding: 50px 20px;
 }
 
+.destaquestitulo {
+    margin-bottom: 20px;
+}
 
+.prato {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
 
+.pratoimagem {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.pratonome {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pratodescricao {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.pratopreco {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff5f2e;
+}
+
+#BotaoDeVoltar {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(68, 0, 0);
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    z-index: 9999;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+}
+
+#BotaoDeVoltar:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+}
+
+.rodape {
+    background-color: #333;
+    color: #ff8520;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+}

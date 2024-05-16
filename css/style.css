@@ -1,3 +1,5 @@
+
+/* Estilos originais */
 .btn-login {
   background-color: #ff7300; /* Laranja queimado */
   color: #fff; /* Cor do texto */
@@ -41,7 +43,7 @@
 }
 
 body {
-  background-image: url('/img/primeiraimagem.jpg'); /* Caminho para sua imagem */
+  background-image: url('/img/fundohome.webp'); /* Caminho para sua imagem */
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento pai */ 
 }
 
@@ -50,7 +52,7 @@ html {
 }
 
 .wrapper {
-  min-height: 300vh;
+  min-height: 170vh;
   display: flex;
   flex-direction: column;
 }
@@ -77,10 +79,11 @@ main {
 .descricao {
   font-size: 18px;
   margin-top: 10px;
-  background-color: #FFA500; /* Cor de fundo laranja */
   color: #fff; /* Cor do texto branco */
-  padding: 8px 40px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
+  padding: 12px 24px; /* Espaçamento interno aumentado */
+  background-color: rgba(255, 165, 0, 0.8); /* Fundo laranja com transparência */
+  border-radius: 25px; /* Bordas mais arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil para destacar */
 }
 
 .imagem-delivery {
@@ -89,20 +92,14 @@ main {
 
 .imagem-delivery .descricao {
   position: absolute;
-  bottom: 46px; /* Ajusta a distância da descrição em relação à parte inferior da imagem */
+  bottom: 14px; /* Ajusta a distância da descrição em relação à parte inferior da imagem */
   left: 50%; /* Posiciona a descrição no centro horizontal */
   transform: translateX(-50%); /* Centraliza horizontalmente */
 }
 
-
-
-
-
-
 /* Melhorias aplicadas */
-
-#delivery,
-#comida {
+#delivery
+ {
     width: 80%; /* Redimensiona as imagens para ocuparem 80% da largura disponível */
     max-width: 600px; /* Define um tamanho máximo para as imagens */
     height: auto; /* Mantém a proporção */
@@ -110,18 +107,20 @@ main {
     mix-blend-mode: multiply;
 }
 
+#comida{
+  width: 80%; /* Redimensiona as imagens para ocuparem 80% da largura disponível */
+    max-width: 600px; /* Define um tamanho máximo para as imagens */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+}
+
 .descricao:nth-child(2) {
     margin-top: 50px; /* Ajuste o espaçamento superior para o segundo texto conforme necessário */
 }
 
-
 .header-1 {
-    background-color: rgba(216, 98, 1, 0.39);
+    background-color: rgba(216, 98, 1, 0.808);
     height: 90px;
-}
-
-.delivery-img {
-    margin-top: 100px; /* Ajuste o valor conforme necessário para mover a imagem de entrega para baixo */
 }
 
 i {
@@ -201,6 +200,52 @@ footer a {
 footer a:hover {
     color: #ff2121;
 }
+
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .btn-group {
+    position: static; /* Remove a posição absoluta para alinhar os botões à esquerda */
+    margin-top: 10px; /* Adiciona um espaçamento superior */
+    text-align: center; /* Alinha os botões ao centro */
+  }
+  
+  .btn-group button {
+    margin-left: 0; /* Remove o espaçamento entre os botões */
+    margin-right: 10px; /* Adiciona um espaçamento à direita */
+  }
+  
+  .wrapper {
+    min-height: auto; /* Remove a altura mínima */
+  }
+  
+  .menu-principal {
+    flex-direction: column; /* Altera a direção do flexbox para empilhar os itens verticalmente */
+    align-items: center; /* Centraliza os itens na horizontal */
+    margin-top: 50px; /* Reduz o espaçamento superior */
+  }
+  
+  .descricao {
+    font-size: 16px; /* Reduz o tamanho da fonte da descrição */
+    padding: 10px 20px; /* Reduz o espaçamento interno */
+    border-radius: 20px; /* Bordas mais arredondadas */
+  }
+  
+  .imagem-delivery .descricao {
+    bottom: -30px; /* Ajusta a posição da descrição */
+  }
+
+  footer {
+    padding: 15px; /* Reduz o preenchimento */
+  }
+  
+  footer p {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+  }
+}
+
+
+
 
 
 
