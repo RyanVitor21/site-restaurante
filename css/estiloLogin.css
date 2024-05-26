@@ -41,7 +41,7 @@ form input[type="password"] {
     margin-top: 10px; /* Adiciona margem superior ao campo de e-mail */
 }
 
-form button[type="submit"] {
+.botao_login{
     width: 78%;
     padding: 10px;
     background-color: #640000;
@@ -51,6 +51,8 @@ form button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+    
+
 
 .clear-button {
     background-color: red;
@@ -109,4 +111,58 @@ div span {
 #BotaoDeVoltar:hover {
     transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
 }
+
+
+.message {
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: visibility 0s, opacity 0.2s linear;
+    height: 40px; /* Altura fixa para evitar movimentação */
+    display: flex; 
+    text-align: center;
+}
+.message.error {
+    background-color: #f8d7da;
+    color: #6d000b;
+    border: 1px solid #f5c6cb;
+}
+.message.success {
+    background-color: #d4edda;
+    color: #139631;
+    border: 1px solid #c3e6cb;
+}
+.message.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Adicione seus estilos personalizados abaixo */
+
+/* Adiciona estilos específicos para telas pequenas */
+@media (max-width: 576px) {
+    form label {
+        width: 100%; /* Define a largura total para rótulos em telas pequenas */
+    }
+}
+
+/* Adiciona estilos específicos para telas médias */
+@media (min-width: 576px) {
+    form {
+        max-width: 400px; /* Ajusta a largura máxima do formulário para telas médias */
+    }
+}
+
+/* Adiciona estilos específicos para telas grandes */
+@media (min-width: 992px) {
+    form {
+        max-width: 600px; /* Ajusta a largura máxima do formulário para telas grandes */
+    }
+}
+
+
+
+
 
