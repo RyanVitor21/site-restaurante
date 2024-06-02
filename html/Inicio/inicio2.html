@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Delivery</title>
     <link rel="stylesheet" href="/css/estiloInicio.css">
-    
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="icon" href="/img/logo4.PNG">
+
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <img id="BotaoDeVoltar" src="/img/voltar.png">
+    <img id="BotaoDeVoltar" src="/img/voltar.png" alt="Voltar">
     <nav class="menu">
         <ul>
             <li><a href="/inicio">Início</a></li>
@@ -17,42 +21,151 @@
             <li><a href="/bebidas">Bebidas</a></li>
             <li><a href="/shopping">Shopping</a></li>
         </ul>
+        <i onclick="showCart()" class="bi bi-cart2 cart-icon"></i>
     </nav>
-    
 
     <header class="cabecalho">
         <h1 class="cabecalhotitulo">Turbo Eats</h1>
-        <h3 style="text-align: center; color: white;">Restaurante e Delivery</h3>
+        <h3 class="cabecalho-subtitulo">Restaurante e Delivery</h3>
     </header>
 
     <section class="banner">
         <div class="bannerconteudo">
             <h2 class="bannertitulo">Comida de qualidade na sua porta!</h2>
             <p class="bannerdescricao">Peça agora e aproveite nossas ofertas especiais.</p>
-            <a href="#" class="botao botao--primario">Ver Cardápio</a>
+            <a href="/html/Inicio/cardapio.html" class="botao botao--primario">Ver Cardápio</a>
         </div>
     </section>
 
     <section class="destaques">
         <h2 class="destaquestitulo">Pratos em Destaque</h2>
-        <div class="prato">
-            <img src="/img/comidas.jpg" alt="Prato 1" class="pratoimagem">
-            <h3 class="pratonome">Hamburguer com acompanhamento</h3>
-            <p class="pratodescricao">Descrição do prato. Lorem ipsum dolor sit amet.</p>
-            <span class="pratopreco">R$ 19,99</span>
-            <a href="#" class="botao botao--secundario">Adicionar ao Carrinho</a>
+        <div class="pratos-container">
+            <div class="prato" id="1">
+                <img src="/img/EXECUTIVO DE PEIXE.jpg" alt="Prato 1" class="pratoimagem">
+                <h3 class="pratonome">EXECUTIVO DE PEIXE</h3>
+                <p class="pratodescricao">Acompanhamentos: Arroz e Purê.</p>
+                <span class="pratopreco">R$ 39,99</span>
+                <button onclick="addToCart(1)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="2">
+                <img src="/img/GALINHA CAIPIRA P 2 PESSOAS.jpg" alt="Prato 2" class="pratoimagem">
+                <h3 class="pratonome">GALINHA CAIPIRA P/ 2 PESSOAS</h3>
+                <p class="pratodescricao">Galinha preparada com tempero especial da casa</p>
+                <span class="pratopreco">R$ 59,99</span>
+                <button onclick="addToCart(2)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="3">
+                <img src="/img/EXECUTIVO DE STROGONOFF DE CARNE.avif" alt="Prato 3" class="pratoimagem">
+                <h3 class="pratonome">EXECUTIVO DE STROGONOFF DE CARNE</h3>
+                <p class="pratodescricao">Acompanhamentos: Arroz e Purê.</p>
+                <span class="pratopreco">R$ 39,99</span>
+                <button onclick="addToCart(3)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="4">
+                <img src="/img/EXECUTIVO DE PARMEGIANA DE CAMARÃO.jpg" alt="Prato 4" class="pratoimagem">
+                <h3 class="pratonome">EXECUTIVO DE PARMEGIANA DE CAMARÃO</h3>
+                <p class="pratodescricao">Acompanhamentos: Espaguete, Purê</p>
+                <span class="pratopreco">R$ 69,99</span>
+                <button onclick="addToCart(4)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="5">
+                <img src="/img/DUQUE CALABRESA SENSACIONAL.jpg" alt="Prato 5" class="pratoimagem">
+                <h3 class="pratonome">SOBERANO BACON</h3>
+                <p class="pratodescricao">Pão brioche, 2x carne 100% artesanal, 2x mussarela, 2x bacon, alface, tomate, cebola caramelizada.</p>
+                <span class="pratopreco">R$ 23,99</span>
+                <button onclick="addToCart(5)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="6">
+                <img src="/img/X-SALADA BURGER CLASSIC.jpg" alt="Prato 6" class="pratoimagem">
+                <h3 class="pratonome">X-SALADA BURGER</h3>
+                <p class="pratodescricao">Pão brioche, 1x carne de hambúrguer artesanal (100g), alface, tomate, deliciosa camada de maionese caseira.</p>
+                <span class="pratopreco">R$ 13,99</span>
+                <button onclick="addToCart(6)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="7">
+                <img src="/img/CLASSIC BACON SUCULENTO BURGUER.jpg" alt="Prato 7" class="pratoimagem">
+                <h3 class="pratonome">CLASSIC BACON SUCULENTO</h3>
+                <p class="pratodescricao">Pão brioche, 1x carne de Hambúrguer artesanal (100g), bacon, queijo mussarela.</p>
+                <span class="pratopreco">R$ 27,99</span>
+                <button onclick="addToCart(7)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="8">
+                <img src="/img/CLÁSSICO.jpg" alt="Prato 8" class="pratoimagem">
+                <h3 class="pratonome">CLÁSSICO SIMPLES</h3>
+                <p class="pratodescricao">Carnes grelhadas ao ponto, ele traz o sabor da churrasqueira. Acompanhado de uma generosa.</p>
+                <span class="pratopreco">R$ 13,99</span>
+                <button onclick="addToCart(8)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="9">
+                <img src="/img/DUPLO.jpg" alt="Prato 9" class="pratoimagem">
+                <h3 class="pratonome">DUPLO LORDE CARNE</h3>
+                <p class="pratodescricao">Lorde CARNE, carne, alface, tomate, cebola caramelizada e nosso incrível molho especial da casa.</p>
+                <span class="pratopreco">R$ 56,99</span>
+                <button onclick="addToCart(9)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="10">
+                <img src="/img/DUPLA SENSAÇÃO.avif" alt="Prato 10" class="pratoimagem">
+                <h3 class="pratonome">DUPLA SENSAÇÃO CARNE</h3>
+                <p class="pratodescricao">Duplas Sensação, carne, alface, caramelizada e nosso incrível molho especial da casa.</p>
+                <span class="pratopreco">R$ 56,99</span>
+                <button onclick="addToCart(10)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
         </div>
-        <!-- Mais pratos em destaque aqui -->
+    </section>
+
+    <section class="destaques">
+        <h2 class="destaquestitulo">Bebidas</h2>
+        <div class="pratos-container">
+            <div class="prato" id="11">
+                <img src="/img/COCA-COLA 1L.webp" alt="Bebida 1" class="pratoimagem">
+                <h3 class="pratonome">COCA-COLA 1L</h3>
+                <p class="pratodescricao">(Garrafa 1L)</p>
+                <span class="pratopreco">R$ 12,99</span>
+                <button onclick="addToCart(11)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="12">
+                <img src="/img/COCA-COLA LATA 350ML.webp" alt="Bebida 2" class="pratoimagem">
+                <h3 class="pratonome">COCA-COLA LATA</h3>
+                <p class="pratodescricao">(Lata 350ml)</p>
+                <span class="pratopreco">R$ 10,99</span>
+                <button onclick="addToCart(12)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="13">
+                <img src="/img/GUARANÁ ANTARCTICA LATA.webp" alt="Bebida 3" class="pratoimagem">
+                <h3 class="pratonome">ANTARCTICA LATA</h3>
+                <p class="pratodescricao">(Lata 350ml)</p>
+                <span class="pratopreco">R$ 7,99</span>
+                <button onclick="addToCart(13)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            <div class="prato" id="14">
+                <img src="/img/ANTÁRTICA 1L.webp" alt="Bebida 4" class="pratoimagem">
+                <h3 class="pratonome">ANTÁRTICA 1L</h3>
+                <p class="pratodescricao">(Garrafa 1L)</p>
+                <span class="pratopreco">R$ 12,99</span>
+                <button onclick="addToCart(14)" class="botao botao--secundario">Adicionar ao Carrinho</button>
+            </div>
+            
+        </div>
+    </section>
+
+     <!-- Carrinho -->
+     <section id="cart" class="cart-container">
+        <div class="cart-header">
+            <i onclick="hideCart()" class="bi bi-x-circle close-cart"></i>
+            <h3>Carrinho</h3>
+        </div>
+        <section id="foods-cart" class="foods-cart">
+            <!-- Conteúdo do carrinho será injetado aqui -->
+        </section>
     </section>
 
     <footer class="rodape">
         <p>&copy; 2024 Meu Delivery. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="/js/cart.js"></script>
     <script>
-        // Adicione um evento de clique ao botão de voltar
         document.getElementById("BotaoDeVoltar").addEventListener("click", function() {
-            // Use o método history.back() para voltar à página anterior
             window.history.back();
         });
     </script>

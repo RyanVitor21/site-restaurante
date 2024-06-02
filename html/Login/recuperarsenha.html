@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo4.PNG">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Esquecer a Senha - iFood</title>
+    <style>
+        body {
+            background-image: url('/img/pizzawallpaper.jpeg'); /* Certifique-se de que o caminho está correto */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #BotaoDeVoltar {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background-color: rgb(68, 0, 0);
+        border-radius: 50%;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+        transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+        }
+
+        #BotaoDeVoltar:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+        }
+
+        
+
+        .container {
+            background-color: #e6e600;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #E30613;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #E30613;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #bf0410;
+            transform: scale(1.05);
+        }
+
+        .footer-link {
+            margin-top: 20px;
+        }
+
+        a {
+            color: #E30613;
+            text-decoration: none;
+            transition: text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #BotaoDeVoltar {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background-color: rgb(68, 0, 0);
+        border-radius: 50%;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+        transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+        }
+
+        #BotaoDeVoltar:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <img id="BotaoDeVoltar" src="/img/voltar.png" alt="Voltar">
+    <div class="container">
+        <h1>Recuperar Senha</h1>
+        <form action="/recuperar-senha" method="POST">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="footer-link">
+            <a href="/html/Login/login.html">Voltar para o login</a>
+        </div>
+
+        <script>
+            document.getElementById("BotaoDeVoltar").addEventListener("click", function() {
+                window.history.back();
+            });
+        </script>
+    </div>
+</body>
+</html>
