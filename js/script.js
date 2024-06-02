@@ -1,3 +1,6 @@
+//precisa testar os cookies
+
+
 $(document).ready(function() {
   // Verifica se o usuário já aceitou os cookies
   if (localStorage.getItem('cookieAccepted')) {

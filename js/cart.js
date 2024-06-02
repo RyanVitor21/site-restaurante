@@ -1,3 +1,5 @@
+//cart
+
 let cart = [];
 
 const addToCart = (id) => {
