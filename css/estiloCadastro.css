@@ -84,7 +84,22 @@ body {
     border-radius: 100%; /* Transforma o elemento em um círculo (ou oval se a largura e a altura não forem iguais) */
   }
 
-  
+  #BotaoDeVoltar {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(68, 0, 0);
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+    }
+
+    #BotaoDeVoltar:hover {
+        transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+    }
   .cookie-notice {
     background-color: #f0f0f0;
     padding: 20px;

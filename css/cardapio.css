@@ -1,0 +1,18 @@
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item h3, .menu-item p {
+    margin: 0;
+}
+
+.menu-item + .menu-item {
+    border-top: 1px solid #555555; /* Cinza claro para separar itens */
+}
+
+.menu-section h2 {
+    margin-bottom: 1rem;
+}

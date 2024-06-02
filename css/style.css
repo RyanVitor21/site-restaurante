@@ -108,10 +108,11 @@ main {
 }
 
 #comida{
-  width: 80%; /* Redimensiona as imagens para ocuparem 80% da largura disponível */
+  width: 100%; /* Redimensiona as imagens para ocuparem 80% da largura disponível */
     max-width: 600px; /* Define um tamanho máximo para as imagens */
     height: auto; /* Mantém a proporção */
     margin-bottom: 10px; /* Espaçamento entre as imagens */
+    border-radius: 50%;
 }
 
 .descricao:nth-child(2) {
@@ -175,30 +176,30 @@ i:hover {
 }
 
 footer {
-    background-color: #ffd2d2;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #ccc;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffd2d2;
+  padding: 10px; /* Diminui o padding */
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
+  margin: 0;
+  font-size: 12px; /* Diminui o tamanho da fonte */
+  color: #333;
 }
 
 footer a {
-    color: #640000;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #640000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 12px; /* Diminui o tamanho da fonte */
 }
 
 footer a:hover {
-    color: #ff2121;
+  color: #ff2121;
 }
 
 

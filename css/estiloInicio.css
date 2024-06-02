@@ -1,18 +1,20 @@
 /* Estilos para o menu */
-/* Estilos para o menu */
 .menu {
     background-color: #ff9355;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .menu li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -21,17 +23,22 @@
     text-decoration: none;
 }
 
+.cart-icon {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white;
+}
+
 /* Estilos para o restante do layout */
 .cabecalho {
     background-color: #ff5f2e;
     padding: 40px;
-    
+    text-align: center;
 }
 
-.cabecalhotitulo {
+.cabecalhotitulo, .cabecalho-subtitulo {
     color: #fff;
-    font-size: 2em;
-    text-align: center;
+    margin: 0;
 }
 
 .banner {
@@ -42,7 +49,7 @@
 }
 
 .bannerconteudo {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .bannertitulo {
@@ -70,24 +77,42 @@
 
 .destaques {
     padding: 50px 20px;
+    text-align: center;
 }
 
 .destaquestitulo {
     margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff5f2e;
+}
+
+.pratos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .prato {
-    display: inline-block;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 200px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 auto;
+}
+
+.prato:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pratoimagem {
-    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -118,11 +143,11 @@
     top: 40px;
     left: 20px;
     z-index: 9999;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
+    transition: transform 0.3s ease;
 }
 
 #BotaoDeVoltar:hover {
-    transform: scale(1.2); /* Aumenta o tamanho em 20% ao passar o mouse */
+    transform: scale(1.2);
 }
 
 .rodape {
@@ -131,4 +156,96 @@
     padding: 20px 0;
     text-align: center;
     font-size: 1em;
+}
+
+/* Estilos do Carrinho */
+.cart-container {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    right: -30vw;
+    top: 0;
+    background-color: white;
+    box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: right 0.5s;
+}
+
+.show-cart {
+    right: 0 !important;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-header .close-cart {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.foods-cart {
+    padding: 15px;
+}
+
+.food-card {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.food-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-card-head img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.food-card-head p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.food-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-card-body button {
+    border: none;
+    background-color: #ff5f2e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.food-card-body button:hover {
+    background-color: #ff7f4d;
+}
+
+.food-card-body span {
+    font-size: 1.2em;
+    color: #333;
 }

@@ -85,9 +85,8 @@ h1 {
     text-transform: uppercase;
 }
 
-div span {
-    font-size: 25px; /* Define o tamanho da fonte para os spans dentro do div */
-    
+div button {
+    font-size: 19px; /* Define o tamanho da fonte para os spans dentro do div */
     font-style: italic;
     background-color: #ff6262;
     color: #280000;
