@@ -161,6 +161,70 @@ div button {
     }
 }
 
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; /* Garante que o botão esteja sempre acima de outros elementos */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #640000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #8c0000; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+.dark-mode body {
+    background-color: #000; /* Altera o fundo para preto */
+    color: #fff; /* Altera a cor do texto para branco */
+}
+
+.dark-mode form {
+    background-color: #000000; /* Altera o fundo do formulário para um tom mais escuro */
+    border-color: #666; /* Altera a cor da borda do formulário */
+}
+
+.dark-mode label {
+    color: #fff; /* Altera a cor do texto dos rótulos para branco */
+}
+
+.dark-mode input[type="email"],
+.dark-mode input[type="password"] {
+    background-color: #333; /* Altera o fundo dos campos de entrada */
+    color: #fff; /* Altera a cor do texto nos campos de entrada */
+    border-color: #666; /* Altera a cor da borda dos campos de entrada */
+}
+
+.dark-mode .botao_login {
+    background-color: #fffb00; /* Altera a cor do botão de login */
+    color: #fff; /* Altera a cor do texto no botão de login */
+}
+
+.dark-mode .clear-button {
+    background-color: #0d4100; /* Altera a cor do botão de limpar */
+    color: #000; /* Altera a cor do texto no botão de limpar */
+}
+
+.dark-mode div button {
+    background-color: #00330b; /* Altera a cor dos botões adicionais */
+    color: #280000; /* Altera a cor do texto nos botões adicionais */
+}
+
+.dark-mode body{
+
+    background-color: #8c0000;
+}
+
+/* Adicione mais estilos conforme necessário */
+
+
+
 
 
 
